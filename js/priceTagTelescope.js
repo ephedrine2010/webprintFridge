@@ -13,7 +13,8 @@ $(document).ready(function() {
 
       let text= urlParams.get('text');
       
-      /*text=`
+      /*
+      text=`
         46546456645,amaryl 3mg 30 tab,98573894755 , 202412 **
         46546456645,amaryl 3mg 30 tab test big line,98573894755 , 202412 **
         46546456645,amaryl 3mg 30 tab,98573894755 , 202412 **
@@ -78,10 +79,10 @@ $(document).ready(function() {
       function createHTML(item) {
         return`
                 <tr >
-                  <td style="font-size:x-medium;">${item.sku}</td>
-                  <td style="font-size:x-medium;">${item.name_en}</td>
-                  <td style="font-size:x-medium;">${item.barcode}</td>
-                  <td style="font-size:x-medium;">${item.exp_date}</td>
+                  <td style="font-size:small;">${item.sku}</td>
+                  <td style="font-size:small;">${item.name_en}</td>
+                  <td style="font-size:small;">${item.barcode}</td>
+                  <td style="font-size:small;">${item.exp_date}</td>
                 </tr>
           `
       }
